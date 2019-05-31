@@ -71,7 +71,44 @@
             <time>31 May 2019</time> by CodingVipers
             <hr>
             
-            <h1 id="hello">hello</h1>
+            <p>I bought a domain (codingvipers.com) and wanted to setup a Jekyll blog on GitHub pages.</p>
+
+<p>This is what I’m trying to achieve.</p>
+
+<ol>
+  <li>Custom domain should works with GitHub HTTPS encryption.</li>
+  <li>Default should be apex/naked domain not www sub domain (https://codingvipers.com).</li>
+  <li>www sub domain should redirected to apex domain.</li>
+  <li>codingvipers.github.io should redirected to apex domain.</li>
+</ol>
+
+<p>To get things done, just follow bellow steps.</p>
+
+<h2 id="custom-domain-options-in-github-page-repository">Custom domain options in GitHub page repository</h2>
+
+<p><img src="/assets/img/2019/05/github-pages-repository-settings-option.png" alt="GitHub pages repository settings option" class="img-fluid border" /></p>
+
+<p><img src="/assets/img/2019/05/github-pages-repository-custom-domain-settings-options.png" alt="GitHub pages repository custom domain settings options" class="img-fluid border" /></p>
+
+<p>After you save those options, it’s take some time to take the effect.</p>
+
+<h2 id="cname-file-in-the-repository">CNAME file in the repository</h2>
+
+<p><img src="/assets/img/2019/05/github-pages-cname-file.png" alt="GitHub pages CNAME file" class="img-fluid border" /></p>
+
+<p>CNAME file should contain apex custom domain without trailing newline.</p>
+
+<p><img src="/assets/img/2019/05/github-pages-cname-file-content.png" alt="GitHub pages CNAME file content" class="img-fluid border" /></p>
+
+<h2 id="dns-records">DNS records</h2>
+
+<p>4 A name records and 1 CNAME record.</p>
+
+<p><img src="/assets/img/2019/05/github-pages-dns-records.png" alt="DNS records for GitHub pages" class="img-fluid border" /></p>
+
+<p>After create those DNS records, just wait at least 24 hours to take the effect (Most of the time it will only takes few hours).</p>
+
+<p>Thats all you have to do.</p>
 
         </div>
     </div>
