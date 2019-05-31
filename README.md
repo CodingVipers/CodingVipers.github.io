@@ -1,2 +1,2 @@
-# CodingVipers.github.io
-CodingVipers blog.
+# CodingVipersBlog
+CodingVipers blog source.
